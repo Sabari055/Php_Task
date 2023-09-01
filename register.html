@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <!-- ! bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+        <!-- ! jquery cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- ! custom css -->
+        <link rel="stylesheet" href="./css/register.css">
+        <!-- ! JS link -->
+        <script defer src="./js/register.js"></script>
+
+    </head>
+
+    <body>
+        <form method="POST">
+            <h2>Sign up</h2>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>mailID</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>Mobile Number</label>
+                <input type="text" name="mobilenumber" id="mobilenumber">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>DOB</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <!--  -->
+            <div class="input-wrapper">
+                <label>Gender</label>
+                <div class="radio">
+                    <input type="radio" name="gender" value="male" class="gender" id="gendermale">
+                    <label for="gendermale">Male</label>
+                    <input type="radio" name="gender" value="female" class="gender" id="genderfemale">
+                    <label for="genderfemale">Female</label>
+                </div>
+            </div>
+            <!--  -->
+            <div id="error"></div>
+            <!--  -->
+            <button type="submit" id="signup">Register</button>
+        </form>
+    </body>
+
+</html>
