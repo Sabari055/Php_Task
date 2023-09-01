@@ -1,0 +1,42 @@
+/* class="py-3 md:px-5 d-flex flex-column" style="min-height: 100vh;" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text: #000000a0;
+  --accent: #02fcfc;
+}
+
+body {
+  min-height: 100vh;
+  padding: 3% 2%;
+  display: flex;
+  background: #fafaff;
+  flex-direction: column;
+}
+
+p::first-letter {
+  margin-left: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+h5 {
+    color: #000000e9;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+p {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+footer {
+  color: var(--accent);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 4% 7%;
+  }
+}
